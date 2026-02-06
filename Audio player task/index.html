@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUDIO PLAYER</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <center> <strong id="audioTitle">audio title</strong></center>
+        <center> <img src="audio.png" id="topImage"></center>
+        <audio src="audio.mp3" id="audio"></audio>
+        <center>
+            <div class="tools">
+                <img src="b10.png" id="b10" class="miniBtns">
+                <img src="play.png" id="play" class="playBtn">
+                <img src="f10.png" id="f10" class="miniBtns">
+            </div>
+
+
+            <div class="progress">
+                <span id="currentTime">00:00:00</span>
+                <input type="range" id="slider" value="0" min="0" max="100">
+                <span id="duration">00:00:00</span>
+            </div>
+        </center>
+        <div >
+            <select id="speed">
+                <option value="0.25">0.25x</option>
+                <option value="0.5">0.5x</option>
+                <option value="1" selected>1x</option>
+                <option value="1.25">1.25x</option>
+                <option value="1.5">1.5x</option>
+                <option value="2">2x</option>
+            </select>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

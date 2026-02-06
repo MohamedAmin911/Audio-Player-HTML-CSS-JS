@@ -1,0 +1,160 @@
+@font-face {
+        font-family: "juristdiresemibold";
+        src: url("juristdiresemibold.ttf");
+        font-weight: 700;
+        font-style: normal;
+        font-display: swap;
+      }
+
+
+*{
+    box-sizing: border-box;
+    border: 3px solid #05c60500;
+}
+
+
+body{
+    background: linear-gradient(120deg,#0e5427 ,#191414);
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: "juristdiresemibold";
+}
+
+#topImage{
+    width: 300px; 
+    margin-top: 100px;
+    animation: rotate 6s linear infinite;
+    animation-play-state: paused;
+    filter:drop-shadow(0 0 20px #05c6055c);  
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+#audioTitle{
+    position: relative;
+    top: 30px;
+    color: #05c605;
+    font-size: 50px;
+}
+
+
+.miniBtns{
+    width: 30px;
+    height: 30px;
+    
+}
+
+
+.playBtn{
+    width: 60px;
+    height: 60px;
+    margin: 5px 50px;
+    
+}
+
+
+.playBtn:hover{
+    cursor: pointer;
+    filter:drop-shadow(0 0 20px #05c6058c);  
+}
+
+
+.miniBtns:hover{
+    cursor: pointer;
+    filter:drop-shadow(0 0 20px #05c605)
+    drop-shadow(0 0 20px #05c605);  
+}
+
+
+.tools{
+    width: 100%;
+    position: fixed;
+    bottom:70px;
+}
+
+
+
+#speed{
+    position: fixed;
+    right: 50px;
+    bottom: 50px;   
+    width:100px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: #0e542622;
+    color: #05c605;
+    font-family: "juristdiresemibold";
+    border: 3px solid #05c60500;
+}
+
+#speed:focus{
+    border: 3px solid #05c60500;
+}
+
+#speed:hover{
+    cursor: pointer;
+    filter:drop-shadow(0 0 20px #05c605)
+    drop-shadow(0 0 20px #05c605);   
+}
+
+
+#slider{
+    margin-left: 20px;
+    margin-right: 20px;
+    appearance: none;
+    -webkit-appearance:none ;
+    width:300px;
+    height: 10px;
+    border-radius: 30px;
+    background-color: #0e542634;
+}
+
+
+#slider::-webkit-slider-thumb{
+    appearance: none;
+    -webkit-appearance:none ;
+    width:20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #05c605;
+
+    
+}
+
+
+#slider::-webkit-slider-thumb:hover{
+    cursor: pointer;
+    filter:drop-shadow(0 0 20px #05c605)
+    drop-shadow(0 0 20px #05c605);   
+}
+
+
+.progress{
+    width: 100%;
+    position: fixed;
+    bottom: 30px;
+}
+
+
+#currentTime{
+color: #05c605;
+ font-size: 15px;
+ font-weight: 400;
+}
+
+
+#duration{
+color: #05c605;
+ font-size: 15px;
+ font-weight: 400;
+}
